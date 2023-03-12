@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
-        transform.Translate(new Vector3(horizontal, 0, vertical) * movementSpeed * Time.deltaTime * 5);
+        transform.Translate(new Vector3(horizontal, 0, vertical) * movementSpeed * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)
